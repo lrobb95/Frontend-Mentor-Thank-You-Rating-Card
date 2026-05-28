@@ -88,7 +88,7 @@ article {
         padding: .65em 1em;
         border-radius: 50%;
         background-color: rgba(149, 158, 172, .3);
-        color: var(--p-rate-number-color);
+        color: black;
         font-weight: var(--fw-400);
         cursor: pointer;
     }
