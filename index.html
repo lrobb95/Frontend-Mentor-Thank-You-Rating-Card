@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+
+  <!-- Rating state start -->
+  <main>
+    <div class="container">
+      <article class="card">
+        <div class="star-bg">
+          <img src="images/icon-star.svg" alt="orange star icon">
+        </div>
+        <h1>How did we do?</h1>
+        <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+        <div class="rate">
+          
+            <span class="rating" role="button" [data-index-value="1"]>1</span>
+            <span class="rating" role="button" [data-index-value="2"]>2</span>
+            <span class="rating" role="button" [data-index-value="3"]>3</span>
+            <span class="rating" role="button" [data-index-value="4"]>4</span>
+            <span class="rating" role="button" [data-index-value="5"]>5</span>
+          
+        </div>
+        <input type="button" value="SUBMIT" id="submit-btn" role="button" aria-roledescription="submit button">
+      </article>
+    </div>
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+    <div class="container">
+      <article class="thanks-card">
+        <img src="images/illustration-thank-you.svg" alt="Image of a credit card and receipt printing out of a printer">
+        <div class="p-bg">
+          <p id="rating-message"></p>
+        </div>
+
+        <h1>Thank you!</h1>
+
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+      </article>
+    </div>
+        <!-- Thank you state end -->
+  </main>
+</body>
+</html>
