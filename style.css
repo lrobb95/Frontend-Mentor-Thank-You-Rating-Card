@@ -49,6 +49,7 @@ article {
     border-radius: 10px;
     height: 100%;
     max-width: 100;
+    margin: 1em 0;
 
 
     .star-bg {
@@ -75,6 +76,20 @@ article {
         font-weight: var(--fw-400);
     }
 
+    #rating-message {
+        color: var(--primary-submit);
+        background-color: rgba(149, 158, 172, .3);
+        border-radius: 1000px;
+        padding: .35em 1em;
+    }
+
+    /* #rating-message[hidden] {
+        color: var(--primary-submit);
+        background-color: rgba(149, 158, 172, .3);
+        border-radius: 1000px;
+        padding: .35em 1em;
+    } */
+
     .rate {
         display: flex;
         align-items: center;
@@ -88,12 +103,24 @@ article {
         padding: .65em 1em;
         border-radius: 50%;
         background-color: rgba(149, 158, 172, .3);
-        color: black;
+        color: var(--p-rate-number-color);
         font-weight: var(--fw-400);
         cursor: pointer;
     }
 
-    input {
+    span:is(:hover) {
+        background-color: var(--primary-submit);
+        color: black;
+    }
+
+    span:is(:active),
+    span:is(:focus-visible) {
+        background-color: var(--h1-text-color);
+        color: black;
+    }
+
+    button {
+        cursor: pointer;
         min-width: 100%;
         padding: 1em;
         border-radius: 1000px;
@@ -101,5 +128,10 @@ article {
         font-weight: var(--fw-700);
         letter-spacing: .1rem;
         font-size: .85rem;
+        border: none;
+    }
+
+    button:is(:hover) {
+        background-color: var(--h1-text-color);
     }
 }
