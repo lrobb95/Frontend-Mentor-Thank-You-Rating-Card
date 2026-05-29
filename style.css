@@ -96,30 +96,31 @@ article {
         gap: 1rem;
     }
 
-    span {
+    button.rating {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: .65em 1em;
+        padding: 1.35em 1.75em;
         border-radius: 50%;
+        border: none;
         background-color: rgba(149, 158, 172, .3);
         color: var(--p-rate-number-color);
         font-weight: var(--fw-400);
         cursor: pointer;
     }
 
-    span:is(:hover) {
+    button.rating:is(:hover) {
         background-color: var(--primary-submit);
         color: black;
     }
 
-    span:is(:active),
-    span:is(:focus-visible) {
+    button.rating:is(:active),
+    button.rating:is(:focus-visible) {
         background-color: var(--h1-text-color);
         color: black;
     }
 
-    button {
+    #submit-btn {
         cursor: pointer;
         min-width: 100%;
         padding: 1em;
