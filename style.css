@@ -86,7 +86,9 @@ article {
     .rate {
         display: flex;
         align-items: center;
-        gap: 1rem;
+        justify-content: space-evenly;
+        width: 100%;
+        gap: .5rem;
     }
 
     button.rating {
@@ -158,4 +160,3 @@ article {
 .show {
     display: flex;
 }
-
